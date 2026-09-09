@@ -1,0 +1,28 @@
+.contact-sec{
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.contact-sec h1{
+    font-size: 5rem;   
+    color: #F25FF7; 
+}
+
+.contact-sec h2{
+    font-size: 2rem;
+    color: rgb(163, 163, 163);
+}
+
+.contact-sec video{
+    position: absolute;
+    height: inherit;   
+    width: 100%; 
+    object-fit: cover;
+    z-index: -1;
+}
+
+.contact-sec h2{
+    color: white !important;
+}
+

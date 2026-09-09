@@ -1,0 +1,82 @@
+.mCard{
+    width: 30%;
+    height: 60rem;
+    transition: 0.3s;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.mCard:hover{
+    border: 2px solid #F25FF7;
+    transform: translateY(-5px);
+}
+.buttons button{
+    width: 20%;
+    height: 3rem;
+    color: white;
+    margin-left: 10px;
+}
+
+.buttons button:hover{
+    border: 2px solid gray;
+}
+
+.activeBtn{
+    border: 2px solid #F25FF7;
+}
+.activeBtn:hover{
+    border: 2px solid #F25FF7 !important;
+    cursor: default;
+}
+.includes{
+    font-size: 1.7rem;
+    min-height: 17rem;
+    list-style: none;
+}
+.includes li::before {
+    content: "\2714";
+    color: green;
+    margin-right: 10px;
+}
+.mCard div:first-child{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: space-around;
+}
+.priceBtn{
+    background-color: #F25FF7;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    width: 80%;
+    margin-left: 10%;
+    transition: 0.4s;
+}
+.priceBtn span{
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+.priceBtn:hover{
+    box-shadow:
+        0 0 2px #F25FF7,
+        0 0 5px #F25FF7,
+        0 0 7px #F25FF7;
+}
+
+@media (max-width: 768px) {
+    .cards{
+        flex-direction: column;
+    }
+    .mCard{
+        width: 70%;
+        margin-top: 10px;
+    }
+}

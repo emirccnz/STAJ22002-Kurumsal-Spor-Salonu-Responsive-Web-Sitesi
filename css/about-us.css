@@ -1,0 +1,39 @@
+.mv div{
+    width: 40%;
+    height: 37rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: #F25FF7 2px solid;
+    border-radius: 10px;
+    box-shadow:
+        0 0 5px #F25FF7,
+        0 0 10px #F25FF7,
+        0 0 20px rgba(242,95,247,.7);
+}
+
+.mv div h2{
+    color: rgb(163, 163, 163);
+}
+.mv{
+    border-bottom: 1.5px rgba(128, 128, 128, 0.274) solid;
+    padding-bottom: 5rem;
+}
+
+.nova-gym-with-numbers{
+    width: 100%;
+    height: 35rem;
+}
+
+.nova-gym-with-numbers h1{
+    font-size: 5rem;
+    color: #F25FF7;
+    text-shadow:
+        0 0 2px #F25FF7,
+        0 0 5px rgba(242,95,247,.7);
+}
+.nova-gym-with-numbers div{
+    text-align: center;
+}

@@ -1,0 +1,205 @@
+header{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 20px;
+    font-weight: 550;
+    font-size: 20px;
+    position: sticky;
+    width: 100%;
+    z-index: 3;
+}
+header.scrolled{
+    background-color: black;
+    border: 2px rgba(128, 128, 128, 0.274) solid ;
+    position: fixed;
+}
+.navToggle {
+    display: none;
+}
+.navItems{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.navImageDiv{
+    width: 120px;
+    aspect-ratio: 3 / 1;
+}
+
+.navImageDiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.navItems a{
+    text-decoration: none;
+    color: inherit;
+}
+.navItems li{
+    display: flex;
+    align-items: center;
+}
+.navItems li:hover{
+    color: #F25FF7;
+}
+
+.navItems .dropdown-toggle::after{
+    transition: .3s;
+}
+ 
+.navItems .dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: black;
+}
+.navItems .dropdown:hover .dropdown-toggle::after{
+    transform: rotate(180deg);
+}
+
+.navItems .dropdown-menu{
+    background-color: inherit;
+    color: white;
+    font-size: 17px;
+    width: 200px;
+}
+.navItems .dropdown-item:hover{
+    background-color: rgba(50, 48, 48, 0.963);
+    color: white;
+}
+@media (max-width: 800px) {
+
+    .navToggle {
+        display: flex;
+
+        position: fixed;
+        top: 20px;
+        left: 20px;
+
+        width: 50px;
+        height: 50px;
+
+        align-items: center;
+        justify-content: center;
+
+        border: none;
+        border-radius: 8px;
+
+        background-color: black;
+        color: white;
+
+        font-size: 22px;
+
+        z-index: 10;
+
+        cursor: pointer;
+    }
+    header,
+    header.scrolled {
+        position: fixed !important;
+
+        top: 0 !important;
+        left: -50% !important;
+
+        width: 50% !important;
+        height: 100vh;
+        
+
+        padding-top: 20%;
+        background-color: black;
+
+        transition: left 0.3s ease;
+
+    }
+
+    header.activeHeader {
+        left: 0 !important;
+    }
+
+
+    .navItems {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        gap: 10px;
+    }
+
+
+    /* Logo */
+
+    .navImageDiv {
+        width: 150px !important;
+        margin: 0 auto 40px;
+    }
+
+
+    /* Menü elemanları */
+
+    .navItems li {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+
+
+    .navItems li > a,
+    .navItems .dropdown > a {
+        width: 100%;
+
+        padding: 12px 15px;
+
+        display: block;
+    }
+
+
+    /* Dropdown */
+
+    .navItems .dropdown {
+        width: 100%;
+    }
+
+
+    .navItems .dropdown-menu {
+        position: static !important;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        background-color: #181818 !important;
+
+        border: none;
+        border-radius: 0;
+
+        font-size: 15px;
+    }
+
+
+    .navItems .dropdown-menu li {
+        width: 100%;
+    }
+
+
+    .navItems .dropdown-item {
+        padding: 10px 25px;
+    }
+
+
+    /* Hover */
+
+    .navItems li:hover {
+        color: #F25FF7;
+    }
+
+
+    .navItems .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/contact-sec.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/membership.css">
+    <title>Üyelik - NovaGym</title>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div id="header"></div>
+    <div class="container">
+        <div class="section">
+            <div>
+                <h3>Üyelik</h3>
+                <h1>HEDEFİNE ATTIĞIN HER ADIMDA NOVAGYM YANINDA.</h1>
+                <h2>NovaGym üyeliğiyle antrenman alanlarımızdan, grup derslerimizden ve sunduğumuz hizmetlerden
+                    ihtiyaçlarınıza uygun şekilde yararlanabilirsiniz. Size en uygun üyelik seçeneğini belirleyerek spor
+                    rutininizi düzenli ve keyifli bir hale getirin.</h2>
+            </div>
+            <div><img src="/images/membership.jpeg" alt="membership"></div>
+        </div>
+        <h1 class="text-center m-5" >Üyelik Seçenekleri</h1>
+        <div class="d-flex justify-content-around align-items-center p-5 cards">
+            <div class="mCard">
+                <div>
+                    <h1>Nova Standart</h1>
+                    <h3>Nova Gym'in en ekonomik paketidir.</h3>
+                    <div class="buttons d-flex flex-row">
+                        <button class="activeBtn monthBtn btn" value="3">Aylık</button>
+                        <button class="monthBtn btn" value="8">3 Aylık</button>
+                        <button class="monthBtn btn" value="15.">6 Aylık</button>
+                        <button class="monthBtn btn" value="25.">12 Aylık</button>
+                    </div>
+                </div>
+                <ul class="includes">
+                    <li>Genel Spor Salonu</li>
+                    <li>Ücretsiz Otopark</li>
+                    <li>Dinlenme Alanı</li>
+                </ul>
+                <button class="priceBtn" onclick="window.location.href = '/pages/contact.html'"><span>3000₺</span>'den başlayan fiyatlarla</button>
+            </div>
+            <div class="mCard">
+                <div>
+                    <h1>Nova Plus</h1>
+                    <h3>Nova Gym bünyesindeki hizmetleri içeren bir pakettir.</h3>
+                    <div class="buttons d-flex flex-row">
+                        <button class="activeBtn monthBtn btn" value="5">Aylık</button>
+                        <button class="monthBtn btn" value="13.">3 Aylık</button>
+                        <button class="monthBtn btn" value="25.">6 Aylık</button>
+                        <button class="monthBtn btn" value="50.">12 Aylık</button>
+                    </div>
+                </div>
+                <ul class="includes">
+                    <li>Genel Spor Salonu</li>
+                    <li>Ücretsiz Otopark</li>
+                    <li>Dinlenme Alanı</li>
+                    <li>Grup Dersleri</li>
+                    <li>Spa & Sauna</li>
+                </ul>
+                <button class="priceBtn" onclick="window.location.href = '/pages/contact.html'"><span>5000₺</span>'den başlayan fiyatlarla</button>
+            </div>
+            <div class="mCard">
+                <div>
+                    <h1>Nova Premium</h1>
+                    <h3>Nova Gym bünyesinde hizmetlerden yararlanılabilen ve alanında uzman eğitmenlerden özel eğitim fırsatını barındıran bir pakettir.</h3>
+                    <div class="buttons d-flex flex-row">
+                        <button class="activeBtn monthBtn btn" value="8">Aylık</button>
+                        <button class="monthBtn btn" value="20.">3 Aylık</button>
+                        <button class="monthBtn btn" value="40.">6 Aylık</button>
+                        <button class="monthBtn btn" value="80.">12 Aylık</button>
+                    </div>
+                </div>
+                <ul class="includes">
+                    <li>Genel Spor Salonu</li>
+                    <li>Ücretsiz Otopark</li>
+                    <li>Dinlenme Alanı</li>
+                    <li>Grup Dersleri</li>
+                    <li>Spa & Sauna</li>
+                    <li>Personal Training</li>
+                    <li>Online Coaching</li>
+                </ul>
+                <button class="priceBtn" onclick="window.location.href = '/pages/contact.html'"><span>8000₺</span>'den başlayan fiyatlarla</button>
+            </div>
+        </div>
+    </div>
+    <div id="contact-sec"></div>
+    <div id="footer"></div>
+    <script src="/js/pages/membership.js"></script>
+    <script src="/js/components/loader.js"></script>
+    <script src="/js/components/components.js"></script>
+</body>
+
+</html>

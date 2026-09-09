@@ -1,0 +1,40 @@
+footer{
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    height: 30rem;
+    padding: 4rem;
+}
+footer div{
+    width: 20%;
+    margin: 5px;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+footer h3{
+    color: rgb(194, 194, 194);
+    display: inline;
+}
+footer a{
+    text-decoration: none;
+}
+footer li{
+    margin-top: 9px;
+}
+footer i{
+    color: rgb(194, 194, 194);
+    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+    footer{
+        flex-direction: column !important;
+        height: auto;
+    }
+    footer div{
+        width: 50%;
+    }
+}

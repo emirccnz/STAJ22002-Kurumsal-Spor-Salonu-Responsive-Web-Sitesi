@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title>İletişim - NovaGym</title>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div id="header"></div>
+    <div class="container">
+        <div class="w-100 d-flex justify-content-center" style="height: 50rem;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192612.81790908947!2d28.32644581389038!3d41.034547081634926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b53fdbc4bfe901%3A0x6f637ffe39da55b6!2sSilivri%2C%20%C4%B0stanbul!5e0!3m2!1str!2str!4v1786432595351!5m2!1str!2str"
+                style="border:0; width: 75%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="contact-card d-flex justify-content-around align-items-center p-5">
+            <div>
+                <form action="" class="d-flex flex-column justify-content-around contact-form">
+                    <div>
+                        <label for="name-surname" class="form-label">Ad-Soyad:</label>
+                        <input type="text" class="form-control" id="name-surname">
+                    </div>
+                    <div>
+                        <label for="phone-number" class="form-label">İletişim Numarası:</label>
+                        <input type="tel" class="form-control" id="phone-number" placeholder="">
+                    </div>
+                    <div>
+                        <label for="email" class="form-label">Email Adresi:</label>
+                        <input type="email" class="form-control" id="email" placeholder="">
+                    </div>
+                    <div>
+                        <label for="message" class="form-label">Mesaj:</label>
+                        <textarea class="form-control" id="message" placeholder=""></textarea>
+                    </div>
+                    <button class="btn homepage-btn" type="submit">GÖNDER</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h1><span>NOVA</span>GYM</h1>
+                <div>
+                    <h3>Adres:</h3>
+                    <h2>Aaa Mah. Bbb Cad. Ccc Sok. No: 0 Silivri/İstanbul</h2>
+                </div>
+                <div>
+                    <h3>İletişim Numarası:</h3>
+                    <h2>+90 000 000 0000</h2>
+                </div>
+                <div>
+                    <h3>Email Adresi:</h3>
+                    <h2>info@novagym.com</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/components/loader.js"></script>
+    <script src="/js/components/components.js"></script>
+</body>
+
+</html>

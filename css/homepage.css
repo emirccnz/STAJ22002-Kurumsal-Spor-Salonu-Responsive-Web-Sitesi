@@ -1,0 +1,82 @@
+header{
+    position: fixed;
+}
+.banner{
+    background: 
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("../images/banner.png");
+    min-height:100vh;
+    background-size:cover;
+    background-position:center;
+    z-index: -1;
+    border-bottom: 1.5px rgba(128, 128, 128, 0.274) solid;
+}
+
+
+.banner-content h1{
+    font-size: 8rem;
+}
+.banner-content h3{
+    font-size: 2.5rem;
+}
+.coach-slider{
+    height: 60rem;
+    position: relative;
+    overflow: hidden;
+}
+.coach-slider .card{
+    position: absolute;
+    width: 34rem;
+    height: 51rem;
+    background-size:cover;
+    background-position:center;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.coach-slider .card div{
+    padding: 0;
+    margin: 0;
+    height: 23%;
+    width: 100%;
+    color: white;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,0.9) 20%,
+        rgba(0,0,0,0.8) 60%,
+        rgba(0,0,0,0.7) 80%,
+        rgba(0,0,0,0) 100%);
+}
+.active{
+    left:50%;
+    transform:translateX(-50%);
+}
+.left{
+    left:50%;
+    transform:translateX(-130%);
+    filter: brightness(.6) blur(5px);
+}
+.hidden-right{
+    left:50%;
+    transform:translateX(120%);
+    opacity:0;
+    pointer-events:none;
+    z-index:0;
+}
+
+.right{
+    left:50%;
+    filter: brightness(.6) blur(5px);
+    transform:translateX(30%);
+}

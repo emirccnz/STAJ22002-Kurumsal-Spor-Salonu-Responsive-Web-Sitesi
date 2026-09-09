@@ -1,0 +1,62 @@
+.program{
+    border-bottom: 1.5px rgba(128, 128, 128, 0.274) solid;
+    overflow-x: auto;
+}
+table,td,th{
+    font-size: 1.5rem;
+    background-color: black !important;
+    color: white !important;
+    border-right: 2px solid white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+}
+
+tr>td:last-child,th:last-child{
+    border-right: 2px solid black;
+}
+
+tr:nth-child(8){
+    border-bottom: 2px solid black !important;
+}
+
+td button {
+    min-width: 7rem;
+    width: auto;
+    height: 3rem;
+    margin: 3px;
+    font-size: 1.3rem !important;
+
+    background: #111 !important;
+    color: #ddd !important;
+    border: none;
+    border-top: 2px solid #666;
+    border-bottom: 2px solid #666;
+    border-radius: 4px;
+}
+
+td button:hover{
+    cursor: default;
+}
+
+
+
+.gym {
+    border-top-color: #7777ff;
+    border-bottom-color: #7777ff;
+}
+
+.crossfit {
+    border-top-color: #39c94f;
+    border-bottom-color: #39c94f;
+}
+
+.ozel {
+    border-top-color: #d4d43f;
+    border-bottom-color: #d4d43f;
+}
+
+.hiit {
+    border-top-color: #e05252;
+    border-bottom-color: #e05252;
+}
+
